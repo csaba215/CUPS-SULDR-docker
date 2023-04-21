@@ -1,15 +1,15 @@
 # CUPS-SULDR-docker
 
 Run a CUPS print server on a remote machine to share USB printers over WiFi. 
-Also includes the proprietary samsung driver(driver2-1.00.39) from [https://www.bchemnet.com/suldr/](https://www.bchemnet.com/suldr/)
+Includes the proprietary samsung driver(driver2-1.00.39) from [https://www.bchemnet.com/suldr/](https://www.bchemnet.com/suldr/)
 
 ## Build
 ```sh
-    docker build -t cups .
+docker build -t cups .
 ```
 ## Usage
 ```sh
-    docker run -d --name cups \
+docker run -d --name cups \
     --restart unless-stopped \
     -p 631:631 \
     --privileged \
